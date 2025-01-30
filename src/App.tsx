@@ -1,4 +1,4 @@
-import { Navbar } from "./components/ui/Navbar.jsx";
+import { Navbar } from "@/components/ui/navbar.tsx";
 
 function App() {
   return (
