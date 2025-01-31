@@ -1,6 +1,6 @@
 import { Context, ContextProvider } from "@/store/context.tsx";
 import { useContext } from "react";
-import { Navbar } from "@/components/ui/navbar.tsx";
+import { Navbar } from "./components/ui/navbar.tsx";
 import { Button } from "@/components/ui/button.tsx";
 import {
   Accordion,
