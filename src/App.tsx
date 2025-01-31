@@ -106,10 +106,10 @@ function App() {
             {Object.entries(data).map(([brand, menu]) => (
               <AccordionItem value={brand} key={brand}>
                 <AccordionTrigger>{brand}</AccordionTrigger>
-                <AccordionContent className="flex flex-wrap justify-center gap-4">
+                <AccordionContent className="flex flex-wrap justify-center gap-2">
                   {menu.items.map((item, index) => (
                     <Card
-                      className="flex w-1/2 flex-col justify-between lg:w-1/4"
+                      className="flex m-4 flex-col justify-between md:w-1/4"
                       key={index}
                     >
                       <CardHeader>
@@ -118,12 +118,12 @@ function App() {
                           alt={item.title}
                           className="rounded-md"
                         />
-                        <div className="flex items-center justify-between">
+                        
                           <CardTitle>{item.title}</CardTitle>
-                          <span className="text-lg font-semibold text-green-600">
+                          <p className="text-lg font-semibold text-green-600">
                             ${item.price}
-                          </span>
-                        </div>
+                          </p>
+                        
                         <CardDescription>{item.description}</CardDescription>
                       </CardHeader>
                       <CardFooter>
