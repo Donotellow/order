@@ -1,4 +1,4 @@
-import { Context, ContextProvider } from "./store/context.tsx";
+import { Context, ContextProvider } from "@/store/context.tsx";
 import { useContext } from "react";
 import { Navbar } from "@/components/ui/navbar.tsx";
 import { Button } from "@/components/ui/button.tsx";
@@ -10,7 +10,7 @@ import {
 } from "@/components/ui/accordion";
 import {
   Card,
-  CardContent,
+  /*CardContent,*/
   CardDescription,
   CardFooter,
   CardHeader,

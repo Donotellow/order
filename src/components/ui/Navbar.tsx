@@ -6,8 +6,8 @@ export const Navbar: React.FC = () => {
   const ctx = useContext(Context);
   const cartLength = ctx.cart.length;
   return (
-    <div className="flex justify-between items-center">
-      <div className="m-1 rounded-md bg-neutral-900">
+    <div className="flex m-1 justify-between items-center">
+      <div className="rounded-md bg-neutral-900">
         <p className="text-neutral-50">
           <span className="text-l block italic">The</span>
           <span className="block text-center text-2xl">Order</span>
