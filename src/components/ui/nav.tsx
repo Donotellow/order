@@ -2,7 +2,7 @@ import { Button } from "@/components/ui/button.tsx";
 import { useContext } from "react";
 import { Context } from "@/store/context.tsx";
 
-export const Navbar: React.FC = () => {
+export const Nav: React.FC = () => {
   const ctx = useContext(Context);
   const cartLength = ctx.cart.length;
   return (

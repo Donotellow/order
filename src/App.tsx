@@ -1,6 +1,6 @@
 import { Context, ContextProvider } from "@/store/context.tsx";
 import { useContext } from "react";
-import { Navbar } from "@/components/ui/navbarui.tsx";
+import { Nav } from "@/components/ui/nav.tsx";
 import { Button } from "@/components/ui/button.tsx";
 import {
   Accordion,
@@ -101,7 +101,7 @@ function App() {
     <ContextProvider>
       <div className="flex w-full justify-center">
         <div className="flex max-w-7xl flex-1 flex-col">
-          <Navbar />
+          <Nav />
           <Accordion type="single" collapsible className="w-full">
             {Object.entries(data).map(([brand, menu]) => (
               <AccordionItem value={brand} key={brand}>
